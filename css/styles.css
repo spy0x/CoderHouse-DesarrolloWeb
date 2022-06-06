@@ -7,6 +7,7 @@
 }
 body {
     background-color: #17191A;
+    font-family: 'Hubballi', cursive;
 }
 nav {
     background-color: #212529;
@@ -97,4 +98,9 @@ footer{
     border-radius: 50%;
     width: 100%;
     margin: 1rem 0;
+}
+.imgSquare{
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
 }
