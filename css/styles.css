@@ -5,82 +5,98 @@
     box-sizing: border-box;
     color: #F0F1F2;
 }
+
 body {
     background-color: #17191A;
     font-family: 'Hubballi', cursive;
 }
+
 nav {
     background-color: #212529;
-    padding:1rem;
+    padding: 1rem;
     position: relative;
 }
+
 nav * {
     display: inline;
     text-decoration: none;
     vertical-align: middle;
 }
-nav ul{
+
+nav ul {
     position: absolute;
     top: 1.5rem;
     right: 1rem;
 }
+
 nav ul li {
     margin-left: 1rem;
     font-size: 1.2rem;
     color: white;
     font-family: 'Homenaje', sans-serif;
 }
+
 #navLogo {
     height: 3rem;
 }
+
 header {
     background-image: url("../img/barHeader.png");
-    background-size:contain;
+    background-size: contain;
     /* background-color: #17191A; */
     background-repeat: repeat-x;
-    height:40vh;
+    height: 40vh;
 }
+
 section {
-    padding:2rem 1rem;
+    padding: 2rem 1rem;
 }
-.boxText{
+
+.boxText {
     padding: 3rem;
     border: 1px solid black;
     background-color: #212529;
     border-radius: 0.5rem;
 }
-.title{
+
+.title {
     font-size: 2.5rem;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 1rem;
 }
-section article h3{
+
+section article h3 {
     font-size: 1.5rem;
     text-decoration: underline;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
-.imageContent{
+
+.imageContent {
     display: inline-block;
     width: 15%;
 }
-.imageContent img{
+
+.imageContent img {
     width: 100%;
 }
-.textContent{
+
+.textContent {
     display: inline-block;
     width: 60%;
     vertical-align: top;
     margin-left: 2rem;
 }
-footer{
+
+footer {
     background-color: #212529;
-    padding:1rem;
+    padding: 1rem;
     text-align: center;
-    font-weight:500;
+    font-weight: 500;
     font-family: 'Anton', sans-serif;
 }
-.tarjeta{
+
+.tarjeta {
     padding: 1.5rem;
     border: 1px solid black;
     background-color: #212529;
@@ -90,23 +106,46 @@ footer{
     text-align: center;
     width: 14.5rem;
 }
-.tarjeta ul{
+
+.tarjeta ul {
     list-style-type: none;
     font-family: 'Hubballi', cursive;
 }
-.imgCircle{
+
+.imgCircle {
     border-radius: 50%;
     width: 100%;
     margin: 1rem 0;
 }
-.imgSquare{
+
+.imgSquare {
     width: 100%;
     margin: 1rem 0;
     border-radius: 0.5rem;
 }
-.textTachado{
+
+.textTachado {
     text-decoration: line-through;
 }
+
 .containerInfo {
     margin: 1rem 0;
+}
+
+form div {
+    margin: 1rem 0;
+}
+
+.buttonText {
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.imagePixelArt {
+    width: 10rem;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }

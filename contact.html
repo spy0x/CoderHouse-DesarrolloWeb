@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Homenaje&family=Hubballi&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Homenaje&family=Hubballi&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Los Tres Primos</title>
 </head>
@@ -27,22 +29,28 @@
 
     <!-- Formulario de contacto -->
     <section>
-        <h1>Contact</h1>
-        <form action="POST">
-            <label for="name">Name:
-                <input type="text" placeholder="Your name" name="name">
-            </label>
-
-            <label for="email">Email:
-                <input type="email" placeholder="your@email.com" name="email">
-            </label>
-
-            <label for="message"> Message:
-                <textarea placeholder="Your message here." name="message"></textarea>
-            </label>
-
-            <input type="submit" value="Send">
-        </form>
+        <h1 class="title">Contact</h1>
+        <article class="boxText">
+            <img src="./img/Los3BIG.png" alt="nosotros version pixelart" class="imagePixelArt">
+            <form action="POST" id="formulario">
+                <div>
+                    <label for="name">Name:
+                        <input type="text" placeholder="Your name" name="name">
+                    </label>
+                </div>
+                <div>
+                    <label for="email">Email:
+                        <input type="email" placeholder="your@email.com" name="email">
+                    </label>
+                </div>
+                <div>
+                    <label for="message"> Message:
+                        <textarea placeholder="Your message here." name="message"></textarea>
+                    </label>
+                </div>
+            </form>
+            <button type="submit" form="formulario" value="Submit" class="buttonText">SEND</button>
+        </article>
     </section>
 
     <footer>
