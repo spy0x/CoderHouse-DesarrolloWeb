@@ -86,7 +86,7 @@ footer{
     background-color: #212529;
     border-radius: 0.5rem;
     display: inline-block;
-    margin: 1rem 1rem;
+    margin: 0.5rem 1rem;
     text-align: center;
     width: 14.5rem;
 }
@@ -103,4 +103,10 @@ footer{
     width: 100%;
     margin: 1rem 0;
     border-radius: 0.5rem;
+}
+.textTachado{
+    text-decoration: line-through;
+}
+.containerInfo {
+    margin: 1rem 0;
 }
