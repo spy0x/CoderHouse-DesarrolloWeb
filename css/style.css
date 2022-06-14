@@ -25,6 +25,7 @@ nav {
     position: sticky;
     top: 0px;
     border-bottom: 2px solid black;
+    height: 10vh;
 }
 
 nav ul * {
@@ -49,13 +50,14 @@ header {
 
 section {
     padding: 2rem 1rem;
+    min-height:52vh;
 }
 
 .article__container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 2rem;
-    justify-items: stretch;
+    justify-items: center;
     align-items: center;
     padding: 3rem;
     border: 1px solid black;
@@ -85,6 +87,7 @@ section {
     background-color: #17191A;
     padding: 1rem;
     border: 1px solid whitesmoke;
+    max-width: 125px;
 }
 .article__container--img img{
     width: 100%;
@@ -92,6 +95,7 @@ section {
 .article__container--txt {
     vertical-align: top;
     align-self: flex-start;
+    justify-self: start;
 }
 
 .article__card {
@@ -142,11 +146,23 @@ form div {
 
 footer {
     position: sticky;
-    bottom: 0px;
+    bottom: 0;
     background-color: #212529;
     padding: 1rem;
+    border-top: 2px solid black;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
     text-align: center;
+    vertical-align: middle;
     font-weight: 500;
     font-family: 'Anton', sans-serif;
-    border-top: 2px solid black;
+}
+footer img{
+    height: 100%;
+    max-width: 2rem;
+    max-height: 2rem;
 }
