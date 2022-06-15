@@ -113,12 +113,16 @@ section {
     justify-items: center;
     align-items: center;
 }
-
-
+.article__container__grid--team {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
 .article__subContainer {
     margin: 1rem 0;
 }
-
 .article__title {
     font-size: 2.5rem;
     font-family: 'Oswald', sans-serif;
@@ -203,8 +207,18 @@ section {
     text-align: center;
     width: 90%;
 }
+.article__card--team {
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #212529;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    text-align: center;
+    width: 90%;
+}
 
-.article__card ul {
+.article__card--team ul {
     list-style-type: none;
     font-family: 'Hubballi', cursive;
 }
@@ -265,6 +279,11 @@ footer img {
 
 /* MEDIA QUERIES PARA SITIO RESPONSIVO. Valores por defecto son para version mobile (Mobile First),
 Cifras referenciales de la documentación de Bootstrap/Containers https://getbootstrap.com/docs/5.1/layout/containers/ */
+@media screen and (min-width: 576px) {
+    .article__card--team {
+        width: 60%;
+    }
+}
 @media screen and (min-width: 768px) {
     nav ul * {
         font-size: 1.5rem;
@@ -289,18 +308,30 @@ Cifras referenciales de la documentación de Bootstrap/Containers https://getboo
     .article__subTitle {
         font-size: 2rem;
     }
+    .article__card p {
+        font-size: 1.5rem;;
+    }
+    .article__card--team ul {
+        font-size: 1.5rem;
+    }
     footer p {
         font-size: 1.2rem;
     }
 }
 @media screen and (min-width: 992px) {
     .article__container__grid--projects {
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         align-items: stretch;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .article__container__grid--team {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media screen and (min-width: 1400px) {
     .article__container__grid--projects {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

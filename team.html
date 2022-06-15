@@ -14,10 +14,11 @@
 
     <!-- Menu navegacion -->
     <nav>
-        <img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo">
-        <!-- <h3 id="navTitulo">Los Tres Primos</h3> -->
+        <div>
+            <a href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+        </div>
         <ul>
-            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./team.html">Team</a></li>
@@ -28,40 +29,44 @@
     <!-- Informacion de nosotros -->
     <section>
         <h1 class="article__title">Team</h1>
-        <article class="article__card">
-            <h3 class="article__subTitle">SnowTheArticFox</h3>
-            <img src="./img/lach.png" alt="imagen de Snow" class="card__img--circle">
-            <ul>
-                <li>2D Artist</li>
-                <li>Sound Designer</li>
-                <li>C# Programmer</li>
-                <li>Unity Game Developer</li>
-            </ul>
-        </article>
-        <article class="article__card">
-            <h3 class="article__subTitle">Alexanderk</h3>
-            <img src="./img/tom.png" alt="imagen de Alexanderk" class="card__img--circle">
-            <ul>
-                <li>3D Artist</li>
-                <li>C# Programmer</li>
-                <li>Game Designer</li>
-                <li>Unity Game Developer</li>
-            </ul>
-        </article>
-        <article class="article__card">
-            <h3 class="article__subTitle">Pancho</h3>
-            <img src="./img/pancho.png" alt="imagen de Pancho" class="card__img--circle">
-            <ul>
-                <li>Music Composer</li>
-                <li>C# Programmer</li>
-                <li>Fullstack Python Trainee</li>
-                <li>Unity Game Developer</li>
-            </ul>
-        </article>
+        <div class="article__container__grid--team">
+            <article class="article__card--team">
+                <h3 class="article__subTitle">SnowTheArticFox</h3>
+                <img src="./img/lach.png" alt="imagen de Snow" class="card__img--circle">
+                <ul>
+                    <li>2D Artist</li>
+                    <li>Sound Designer</li>
+                    <li>C# Programmer</li>
+                    <li>Unity Game Developer</li>
+                </ul>
+            </article>
+            <article class="article__card--team">
+                <h3 class="article__subTitle">Alexanderk</h3>
+                <img src="./img/tom.png" alt="imagen de Alexanderk" class="card__img--circle">
+                <ul>
+                    <li>3D Artist</li>
+                    <li>C# Programmer</li>
+                    <li>Game Designer</li>
+                    <li>Unity Game Developer</li>
+                </ul>
+            </article>
+            <article class="article__card--team">
+                <h3 class="article__subTitle">Pancho</h3>
+                <img src="./img/pancho.png" alt="imagen de Pancho" class="card__img--circle">
+                <ul>
+                    <li>Music Composer</li>
+                    <li>C# Programmer</li>
+                    <li>Fullstack Python Trainee</li>
+                    <li>Unity Game Developer</li>
+                </ul>
+            </article>
+        </div>
     </section>
 
     <footer>
+        <img src="./img/Logo_LTP.svg"alt="logo los tres primos">
         <p>© 2022 LTP - LOS TRES PRIMOS GAME STUDIO</p>
+        <img src="./img/Logo_LTP.svg"alt="logo los tres primos">
     </footer>
 </body>
 
