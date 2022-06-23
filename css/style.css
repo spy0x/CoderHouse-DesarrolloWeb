@@ -49,6 +49,9 @@ nav div {
 
 #nav__logo {
     height: 100%;
+    animation-name: displayLogo; 
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
 header {
@@ -360,4 +363,9 @@ Cifras referenciales de la documentación de Bootstrap/Containers https://getboo
     .article__container__grid--projects {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+/* ANIMACIONES */
+@keyframes displayLogo {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
