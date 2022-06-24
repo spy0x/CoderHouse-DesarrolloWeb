@@ -77,6 +77,11 @@ section {
     background-color: #212529;
     border-radius: 0.5rem;
 }
+.article__container--team {
+    border: 1px solid black;
+    background-color: #212529;
+    border-radius: 0.5rem;
+}
 
 .article__container__grid--index {
     display: grid;
@@ -106,14 +111,6 @@ section {
     border-radius: 0.5rem;
 }
 
-.article__container__grid--team {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-}
-
 .article__subContainer {
     margin: 1rem 0;
 }
@@ -132,11 +129,9 @@ section {
     margin-bottom: 1rem;
 }
 
-.article__subTitle {
-    font-size: 1.5rem;
-    text-decoration: underline;
+.article__subtitle {
     font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .article__container__img {
@@ -212,27 +207,17 @@ section {
     text-align: center;
     height: 100%;
 }
-
 .article__card--team {
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: #212529;
-    border-radius: 0.5rem;
-    display: inline-block;
-    margin: 0.5rem 1rem;
-    text-align: center;
-    width: 90%;
-}
-
-.article__card--team ul {
-    list-style-type: none;
-    font-family: 'Hubballi', cursive;
+    background-color: #17191A;
+    height: 100%;
+    width: 20rem;
 }
 
 .card__img--circle {
     border-radius: 50%;
-    width: 100%;
+    width: 75%;
     margin: 1rem 0;
+    align-self: center;
 }
 
 .card__img--square {
@@ -286,11 +271,6 @@ footer img {
 
 /* MEDIA QUERIES PARA SITIO RESPONSIVO. Valores por defecto son para version mobile (Mobile First),
 Cifras referenciales de la documentación de Bootstrap/Containers https://getbootstrap.com/docs/5.1/layout/containers/ */
-@media screen and (min-width: 576px) {
-    .article__card--team {
-        width: 60%;
-    }
-}
 
 @media screen and (min-width: 768px) {
     .article__container__grid--about {
@@ -312,7 +292,7 @@ Cifras referenciales de la documentación de Bootstrap/Containers https://getboo
         margin-bottom: 0;
     }
 
-    .article__subTitle {
+    .article__subtitle {
         font-size: 2rem;
     }
 
@@ -327,12 +307,6 @@ Cifras referenciales de la documentación de Bootstrap/Containers https://getboo
 
     footer p {
         font-size: 1.2rem;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .article__container__grid--team {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
