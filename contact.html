@@ -39,21 +39,23 @@
         <h1 class="article__title">Contact</h1>
         <article class="article__container">
             <img src="./img/Los3BIG.png" alt="nosotros version pixelart" class="mx-auto d-block form__img">
-            <form action="POST" id="formulario" class="row justify-content-center">
-                <div class="col-12 d-flex flex-column">
-                    <label for="name">Name:</label>
-                    <input class="text-dark" type="text" placeholder="Your name" name="name">
-                </div>
-                <div class="col-12 d-flex flex-column">
-                    <label for="email">Email</label>
-                    <input class="text-dark" type="email" placeholder="your@email.com" name="email">
-                </div>
-                <div class="col-12 d-flex flex-column">
-                    <label for="message"> Message</label>
-                    <textarea class="text-dark" placeholder="Your message here." name="message"></textarea>
-                </div>
-            </form>
-            <button type="submit" form="formulario" value="Submit" class="form__button">SEND</button>
+            <div class="d-flex justify-content-center">
+                <form action="POST" id="formulario" class="d-flex flex-column">
+                    <div class="d-flex flex-column align-content-start">
+                        <label for="name">Name</label>
+                        <input class="text-dark" type="text" placeholder="Your name" name="name" size="35">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <label for="email">Email</label>
+                        <input class="text-dark" type="email" placeholder="your@email.com" name="email" size="35">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <label for="message">Message</label>
+                        <textarea id="form__textArea" class="text-dark" placeholder="Your message here." name="message" size="35"></textarea>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" form="formulario" value="Submit" class="form__button btn d-block mx-auto">SEND</button>
         </article>
     </section>
 
