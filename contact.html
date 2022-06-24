@@ -21,21 +21,26 @@
 <body>
 
     <!-- Menu navegacion -->
-    <nav>
-        <div>
-            <a href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top nav__style">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto text-center nav__items">
+              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="./projects.html">Projects</a>
+              <a class="nav-link" href="./team.html">Team</a>
+              <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+            </div>
+          </div>
         </div>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./team.html">Team</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      </nav>
 
     <!-- Formulario de contacto -->
-    <section>
+    <section class="container-fluid px-1 py-3">
         <h1 class="article__title">Contact</h1>
         <article class="article__container">
             <img src="./img/Los3BIG.png" alt="nosotros version pixelart" class="mx-auto d-block form__img">
@@ -43,15 +48,15 @@
                 <form action="POST" id="formulario" class="d-flex flex-column">
                     <div class="d-flex flex-column align-content-start">
                         <label for="name">Name</label>
-                        <input class="text-dark" type="text" placeholder="Your name" name="name" size="35">
+                        <input class="text-dark" type="text" placeholder="Your name" name="name" size="30">
                     </div>
                     <div class="d-flex flex-column">
                         <label for="email">Email</label>
-                        <input class="text-dark" type="email" placeholder="your@email.com" name="email" size="35">
+                        <input class="text-dark" type="email" placeholder="your@email.com" name="email" size="30">
                     </div>
                     <div class="d-flex flex-column">
                         <label for="message">Message</label>
-                        <textarea id="form__textArea" class="text-dark" placeholder="Your message here." name="message" size="35"></textarea>
+                        <textarea id="form__textArea" class="text-dark" placeholder="Your message here." name="message" size="30"></textarea>
                     </div>
                 </form>
             </div>
@@ -59,7 +64,7 @@
         </article>
     </section>
 
-    <footer>
+    <footer class="container-fluid sticky-bottom">
         <img src="./img/Logo_LTP.svg" alt="logo los tres primos">
         <p>© 2022 LTP - LOS TRES PRIMOS GAME STUDIO</p>
         <img src="./img/Logo_LTP.svg" alt="logo los tres primos">

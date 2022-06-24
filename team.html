@@ -21,21 +21,26 @@
 <body>
 
     <!-- Menu navegacion -->
-    <nav>
-        <div>
-            <a href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top nav__style">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto text-center nav__items">
+              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="./projects.html">Projects</a>
+              <a class="nav-link active" aria-current="page" href="./team.html">Team</a>
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </div>
+          </div>
         </div>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./team.html">Team</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      </nav>
 
     <!-- Informacion de nosotros -->
-    <section>
+    <section class="container-fluid py-3">
         <h1 class="article__title">Team</h1>
         <div class="article__container__grid--team">
             <article class="article__card--team">
@@ -71,7 +76,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="container-fluid sticky-bottom">
         <img src="./img/Logo_LTP.svg" alt="logo los tres primos">
         <p>© 2022 LTP - LOS TRES PRIMOS GAME STUDIO</p>
         <img src="./img/Logo_LTP.svg" alt="logo los tres primos">

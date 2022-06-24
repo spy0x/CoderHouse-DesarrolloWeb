@@ -21,26 +21,31 @@
 <body>
 
     <!-- Menu navegacion -->
-    <nav>
-        <div>
-            <a href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top nav__style">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto text-center nav__items">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="./projects.html">Projects</a>
+              <a class="nav-link" href="./team.html">Team</a>
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </div>
+          </div>
         </div>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./team.html">Team</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      </nav>
 
-    <!-- Aqui va solo un carousel -->
-    <header>
+    <!-- Aqui va solo una imagen de header -->
+    <header class="container-fluid">
         <img src="./img/PixelArt/us_pixelart.png" alt="carousel">
     </header>
 
     <!-- Seccion bienvenida con breve descripcion del proyecto -->
-    <section class="section--index">
+    <section class="container-fluid px-1 py-3 section--index">
         <article class="article__container__grid--index">
             <h1 class="article__title--index">Welcome,</h1>
             <div class="article__container__img--index">
