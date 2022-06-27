@@ -1,63 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Homenaje&family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Homenaje&family=Hubballi&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bb590912ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
     <title>Los Tres Primos</title>
 </head>
 
 <body>
 
     <!-- Menu navegacion -->
-    <nav>
-        <div>
-            <a href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top nav__style">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./img/navbar_logo.png" alt="logo menu" id="nav__logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto text-center nav__items">
+              <a class="nav-link" href="./index.html"><span class="fa-solid fa-house mx-1"></span>Home</a>
+              <a class="nav-link" href="./about.html"><span class="fa-solid fa-circle-info mx-1"></span>About</a>
+              <a class="nav-link active" aria-current="page" href="./projects.html"><span class="fa-solid fa-diagram-project mx-1"></span>Projects</a>
+              <a class="nav-link" href="./team.html"><span class="fa-solid fa-users mx-1"></span>Team</a>
+              <a class="nav-link" href="./contact.html"><span class="fa-solid fa-at mx-1"></span>Contact</a>
+            </div>
+          </div>
         </div>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./team.html">Team</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      </nav>
 
     <!-- Proyectos con info y foto -->
-    <section>
-        <h1 class="article__title">Projects</h1>
-        <div class="article__container__grid--projects">
-            <article class="article__card">
-                <img src="./img/theatre_game.png" alt="juego The Theatre" class="card__img--square">
-                <h3 class="article__subTitle">The Theatre</h3>
-                <p>A third person survival horror game ocurrying in a Classical Theatre.</p>
-            </article>
-            <article class="article__card">
-                <img src="./img/the_lamson_room.png" alt="juego The Lamson Room" class="card__img--square">
-                <h3 class="article__subTitle">The Lamson Room</h3>
-                <p>A Point-n-click game placed in a distopic postapocaliptic world.</p>
-            </article>
-            <article class="article__card">
-                <img src="./img/the_keepers.png" alt="juego The Keepers" class="card__img--square">
-                <h3 class="article__subTitle">The Keepers</h3>
-                <p>A Co-op Multiplayer horror game playing as guards in a cemmentery.</p>
-            </article>
-            <article class="article__card">
-                <img src="./img/bakery_street_legacy.png" alt="juego Bakery Street Legacy" class="card__img--square">
-                <h3 class="article__subTitle">Bakery Street Legacy</h3>
-                <p>A low-poly simulation Tycoon game in charge of a Bakery Shop.</p>
-            </article>
+    <section class="container-fluid py-3">
+        <div class="text-center">
+            <i class="me-3 fa-solid fa-diagram-project fa-2x"></i> 
+            <h1 class="fw-bold d-inline-block article__title">Projects</h1>
+            <i class="ms-3 fa-solid fa-diagram-project fa-2x"></i> 
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <article class="article__card--projects">
+                    <img src="./img/theatre_game.png" alt="juego The Theatre" class="card__img--square">
+                    <h3 class="article__subtitle">The Theatre</h3>
+                    <p>A third person survival horror game ocurrying in a Classical Theatre.</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <article class="article__card--projects">
+                    <img src="./img/the_lamson_room.png" alt="juego The Lamson Room" class="card__img--square">
+                    <h3 class="article__subtitle">The Lamson Room</h3>
+                    <p>A Point-n-click game placed in a distopic postapocaliptic world.</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <article class="article__card--projects">
+                    <img src="./img/the_keepers.png" alt="juego The Keepers" class="card__img--square">
+                    <h3 class="article__subtitle">The Keepers</h3>
+                    <p>A Co-op Multiplayer horror game playing as guards in a cemmentery.</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <article class="article__card--projects">
+                    <img src="./img/bakery_street_legacy.png" alt="juego Bakery Street Legacy"
+                        class="card__img--square">
+                    <h3 class="article__subtitle">Bakery Street Legacy</h3>
+                    <p>A low-poly simulation Tycoon game in charge of a Bakery Shop.</p>
+                </article>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <img src="./img/Logo_LTP.svg"alt="logo los tres primos">
+    <footer class="container-fluid sticky-bottom">
+        <img src="./img/Logo_LTP.svg" alt="logo los tres primos">
         <p>© 2022 LTP - LOS TRES PRIMOS GAME STUDIO</p>
-        <img src="./img/Logo_LTP.svg"alt="logo los tres primos">
+        <img src="./img/Logo_LTP.svg" alt="logo los tres primos">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
