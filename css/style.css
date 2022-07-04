@@ -89,6 +89,7 @@ section {
     grid-template-columns: 1fr 3fr;
     column-gap: 2rem;
     row-gap: 2rem;
+    align-items: center;
 }
 
 .article__title {
