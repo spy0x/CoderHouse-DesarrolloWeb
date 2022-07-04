@@ -19,6 +19,7 @@ body {
     /* background-color: #17191A; */
     background-image: linear-gradient(#17191A, #17191A, rgb(18, 18, 18));
     font-family: 'Hubballi', cursive;
+    text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.66);
 }
 
 nav ul {
@@ -32,7 +33,7 @@ nav ul {
     font-family: 'Homenaje', sans-serif;
 }
 
-.nav__items a:hover{
+.nav__items a:hover {
     text-decoration: underline;
 }
 
@@ -47,7 +48,7 @@ nav ul {
     height: 5vh;
     animation-name: displayLogo;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 header {
@@ -77,63 +78,34 @@ section {
 }
 
 .article__container {
-    padding: 2.5rem;
     border: 1px solid black;
     background-color: #212529;
+    -webkit-box-shadow: 5px 8px 14px 2px rgba(0, 0, 0, 0.72);
+    box-shadow: 5px 8px 14px 2px rgba(0, 0, 0, 0.72);
 }
 
-.article__container__index {
-    border: 1px solid black;
-    background-color: #212529;
-}
 .article__container__index--grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
-}
-.article__container__grid--about {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: stretch;
-    border: 1px solid black;
-    background-color: #212529;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 .article__title {
     font-size: 3rem;
     font-family: 'Black Ops One', cursive;
+    text-shadow: 5px 6px 6px #000000;
 }
 
 .article__subtitle {
     font-family: 'Black Ops One', cursive;
+    text-shadow: 5px 6px 6px #000000;
 }
 
 .article__container__img--index {
     background-color: #17191A;
     max-width: 125px;
-}
-
-.article__container__img--about {
-    background-color: #17191A;
-    border: 1px solid whitesmoke;
-    max-width: 350px;
-}
-
-.article__container__img--about img {
-    width: 100%;
-}
-
-.article__container__txt {
-    justify-self: start;
-}
-
-.article__container__txt--about {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78)
 }
 
 .article__card--projects {
@@ -144,10 +116,29 @@ section {
     text-align: center;
     height: 100%;
 }
+
 .article__card--team {
     background-color: #17191A;
     height: 100%;
     width: 20rem;
+}
+
+.card--shadow {
+    -webkit-box-shadow: 5px 5px 13px 5px rgba(0,0,0,0.78); 
+    box-shadow: 5px 5px 13px 5px rgba(0,0,0,0.78);
+}
+
+.card--overlay {
+    transition: all 1s;
+    text-align: center;
+}
+
+.card--overlay:hover {
+    opacity: 0;
+}
+
+.card--overlay:focus {
+    opacity: 0;
 }
 
 .card__img--circle {
@@ -210,38 +201,15 @@ form div {
     font-family: 'Anton', sans-serif;
     margin-bottom: 0;
     text-align: center;
+    text-shadow: 5px 6px 6px #000000;
 }
 
 /* MEDIA QUERIES PARA SITIO RESPONSIVO. Valores por defecto son para version mobile (Mobile First),
 Cifras referenciales de la documentación de Bootstrap/Containers https://getbootstrap.com/docs/5.1/layout/containers/ */
 
 @media screen and (min-width: 768px) {
-    .article__container__grid--about {
-        grid-template-columns: auto auto;
-        row-gap: 1rem;
-        column-gap: 1rem;
-    }
-
-    .article__container__index p {
-        font-size: 1.5rem;
-        align-self: stretch;
-    }
-
-    .article__container__txt--about {
-        text-align: start;
-        justify-self: start;
-        align-self: stretch;
-        font-size: 1.5rem;
-        margin-bottom: 0;
-    }
-
     .article__subtitle {
         font-size: 2rem;
-    }
-
-    .article__card p {
-        font-size: 1.5rem;
-        ;
     }
 
     .article__card--team ul {
@@ -250,6 +218,12 @@ Cifras referenciales de la documentación de Bootstrap/Containers https://getboo
 
     .footer__text {
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 1.5rem;
     }
 }
 
@@ -263,6 +237,7 @@ Cifras referenciales de la documentación de Bootstrap/Containers https://getboo
         opacity: 1;
     }
 }
+
 @keyframes fadingTitle {
     0% {
         opacity: 0;
