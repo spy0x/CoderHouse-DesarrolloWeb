@@ -133,11 +133,9 @@ section {
   transition: all 1s;
   text-align: center;
 }
-
 .card--overlay:hover {
   opacity: 0;
 }
-
 .card--overlay:focus {
   opacity: 0;
 }
