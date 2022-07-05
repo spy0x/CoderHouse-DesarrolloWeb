@@ -1,0 +1,21 @@
+.form__button {
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.form__img {
+    width: 10rem;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+#form__textArea {
+    height: 125px;
+}
+
+form div {
+    margin: 1rem 0;
+}
