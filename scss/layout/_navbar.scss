@@ -1,0 +1,37 @@
+nav ul {
+    margin-bottom: 0;
+}
+
+.nav__items {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(223, 223, 223);
+    font-family: 'Homenaje', sans-serif;
+}
+
+.nav__items a:hover {
+    text-decoration: underline;
+}
+
+.nav__style {
+    background-image: linear-gradient($background-dark, $background-light);
+    padding: 2vh;
+    border-bottom: 1px solid black;
+    min-height: 10vh;
+}
+
+#nav__logo {
+    height: 5vh;
+    animation-name: displayLogo;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+@keyframes displayLogo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

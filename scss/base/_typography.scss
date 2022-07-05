@@ -1,0 +1,38 @@
+/* 
+FONTS INSTALADAS DE GOOGLE FONTS
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display SC', serif; 
+font-family: 'Hubballi', cursive;
+font-family: 'Homenaje', sans-serif;
+font-family: 'Black Ops One', cursive;
+*/
+
+.article__title {
+    font-size: 3rem;
+    font-family: 'Black Ops One', cursive;
+    text-shadow: 5px 6px 6px #000000;
+}
+
+.article__subtitle {
+    font-family: 'Black Ops One', cursive;
+    text-shadow: 5px 6px 6px #000000;
+}
+
+@media screen and (min-width: 768px) {
+    .article__subtitle {
+        font-size: 2rem;
+    }
+
+    .article__card--team ul {
+        font-size: 1.5rem;
+    }
+
+    .footer__text {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 1.5rem;
+    }
+}

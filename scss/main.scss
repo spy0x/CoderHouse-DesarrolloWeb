@@ -1,0 +1,23 @@
+// SASS MAIN FILE //
+
+// UTILS
+@import 'sass-utils/variables';
+// BASE
+@import 'base/reset';
+@import 'base/typography';
+// LAYOUT
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/footer';
+// PAGES
+@import 'pages/index';
+@import 'pages/projects';
+@import 'pages/team';
+@import 'pages/contact';
+// COMPONENTS
+@import 'components/container';
+@import 'components/card';
+
+
+

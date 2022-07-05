@@ -1,0 +1,18 @@
+.footer__container {
+    background-image: linear-gradient($background-light, $background-dark);
+    padding: 2vh;
+    border-top: 1px solid black;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 5px 6px 6px #000000;
+}
