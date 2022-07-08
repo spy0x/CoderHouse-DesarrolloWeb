@@ -1,34 +1,36 @@
 .section--index {
     min-height: 52vh;
 }
+
 .article__container {
     &__index--grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        align-items: center;
     }
+
     &__img--index {
         background-color: $background-dark;
         max-width: 125px;
         box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78)
     }
 }
+
 .aside__title {
     font-family: 'Press Start 2P', cursive;
-    animation-name: fadingTitle;
+    @include set-animation(fadingTitle, ease-in, 1s);
     animation-direction: alternate;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
 @keyframes fadingTitle {
     0% {
-        opacity: 0;
+        @include opacity(0);
     }
 
     100% {
-        opacity: 1;
+        @include opacity(1);
     }
 }

@@ -9,26 +9,20 @@ font-family: 'Black Ops One', cursive;
 
 .article__title {
     font-size: 3rem;
-    font-family: 'Black Ops One', cursive;
+    font-family: map-get($fonts, title );
     text-shadow: 5px 6px 6px #000000;
 }
 
 .article__subtitle {
-    font-family: 'Black Ops One', cursive;
-    text-shadow: 5px 6px 6px #000000;
+    @extend .article__title;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-    .article__subtitle {
-        font-size: 2rem;
-    }
-
-    .article__card--team ul {
-        font-size: 1.5rem;
-    }
-
-    .footer__text {
-        font-size: 1.2rem;
+    @each $class, $fontsize in $texts{
+        .#{$class} {
+            font-size: $fontsize;
+        }
     }
 }
 @media screen and (min-width: 992px) {

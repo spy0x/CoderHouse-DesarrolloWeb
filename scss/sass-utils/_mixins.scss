@@ -1,0 +1,8 @@
+@mixin opacity($amount) {
+    opacity: $amount;
+}
+@mixin set-animation($animName, $timingFunc, $animDuration){
+    animation-name: $animName;
+    animation-timing-function: $timingFunc;
+    animation-duration: $animDuration;
+}

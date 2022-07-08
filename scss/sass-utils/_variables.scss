@@ -4,3 +4,15 @@ $background-dark: #17191A;
 
 // TEXT COLORS
 $text-body-color: #F0F1F2;
+
+// FONTS
+$fonts: (
+    title: ('Black Ops One', cursive),
+    body: ('Hubballi', cursive),
+);
+// FONT SIZES
+$texts: (
+    article__subtitle: 2rem,
+    article__card--team ul: 1.5rem,
+    footer__text: 1.2rem
+);

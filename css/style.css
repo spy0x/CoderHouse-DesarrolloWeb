@@ -14,15 +14,14 @@ font-family: 'Hubballi', cursive;
 font-family: 'Homenaje', sans-serif;
 font-family: 'Black Ops One', cursive;
 */
-.article__title {
+.article__title, .article__subtitle {
   font-size: 3rem;
   font-family: "Black Ops One", cursive;
   text-shadow: 5px 6px 6px #000000;
 }
 
 .article__subtitle {
-  font-family: "Black Ops One", cursive;
-  text-shadow: 5px 6px 6px #000000;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -51,7 +50,6 @@ nav ul {
   color: rgb(223, 223, 223);
   font-family: "Homenaje", sans-serif;
 }
-
 .nav__items a:hover {
   text-decoration: underline;
 }
@@ -116,7 +114,6 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-
 .footer__text {
   font-weight: 500;
   font-size: 1rem;
@@ -146,9 +143,9 @@ section {
 .aside__title {
   font-family: "Press Start 2P", cursive;
   animation-name: fadingTitle;
-  animation-direction: alternate;
   animation-timing-function: ease-in;
   animation-duration: 1s;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 

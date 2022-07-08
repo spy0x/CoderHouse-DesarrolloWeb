@@ -7,10 +7,10 @@
         transition: all 1s;
         text-align: center;
         &:hover {
-            opacity: 0;
+            @include opacity(0);
         }
         &:focus {
-            opacity: 0;
+            @include opacity(0);
         }
     }
 }
