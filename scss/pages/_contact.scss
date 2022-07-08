@@ -7,9 +7,7 @@
 
 .form__img {
     width: 10rem;
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
+    @include set-pixel-perfect;
 }
 
 #form__textArea {

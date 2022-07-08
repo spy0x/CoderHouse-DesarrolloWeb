@@ -10,7 +10,7 @@ font-family: 'Black Ops One', cursive;
 .article__title {
     font-size: 3rem;
     font-family: map-get($fonts, title );
-    text-shadow: 5px 6px 6px #000000;
+    text-shadow: 5px 6px 6px $text-shadow-color;
 }
 
 .article__subtitle {

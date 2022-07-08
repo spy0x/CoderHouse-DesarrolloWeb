@@ -6,7 +6,7 @@ nav ul {
     text-decoration: none;
     font-size: 1.2rem;
     color: rgb(223, 223, 223);
-    font-family: 'Homenaje', sans-serif;
+    font-family: map-get($fonts, navbar);
 
     & a:hover {
         text-decoration: underline;
@@ -16,7 +16,7 @@ nav ul {
 .nav__style {
     background-image: linear-gradient($background-dark, $background-light);
     padding: 2vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $border-color;
     min-height: 10vh;
 }
 
@@ -27,10 +27,10 @@ nav ul {
 
 @keyframes displayLogo {
     0% {
-        opacity: 0;
+        @include opacity(0);
     }
 
     100% {
-        opacity: 1;
+        @include opacity(1);
     }
 }

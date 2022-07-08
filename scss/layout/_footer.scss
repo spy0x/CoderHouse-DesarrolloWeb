@@ -2,7 +2,7 @@
     &__container {
         background-image: linear-gradient($background-light, $background-dark);
         padding: 2vh;
-        border-top: 1px solid black;
+        border-top: 1px solid $border-color;
         height: 8vh;
         display: flex;
         justify-content: space-between;
@@ -12,9 +12,9 @@
     &__text {
         font-weight: 500;
         font-size: 1rem;
-        font-family: 'Anton', sans-serif;
+        font-family: map-get($fonts, footer);
         margin-bottom: 0;
         text-align: center;
-        text-shadow: 5px 6px 6px #000000;
+        text-shadow: 5px 6px 6px $text-shadow-color;
     }
 }

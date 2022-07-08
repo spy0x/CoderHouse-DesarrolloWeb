@@ -1,14 +1,17 @@
 // BACKGROUND COLORS
 $background-light: #212529;
 $background-dark: #17191A;
+$border-color: black;
 
 // TEXT COLORS
 $text-body-color: #F0F1F2;
-
+$text-shadow-color: black;
 // FONTS
 $fonts: (
     title: ('Black Ops One', cursive),
     body: ('Hubballi', cursive),
+    footer: ('Anton', sans-serif),
+    navbar: ('Homenaje', sans-serif),
 );
 // FONT SIZES
 $texts: (
