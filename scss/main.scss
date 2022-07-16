@@ -3,6 +3,10 @@
 // UTILS
 @import 'sass-utils/variables';
 @import 'sass-utils/mixins';
+// COMPONENTS
+@import 'components/container';
+@import 'components/card';
+@import 'components/button';
 // BASE
 @import 'base/reset';
 @import 'base/typography';
@@ -17,10 +21,7 @@
 @import 'pages/projects';
 @import 'pages/team';
 @import 'pages/contact';
-// COMPONENTS
-@import 'components/container';
-@import 'components/card';
-@import 'components/button'
+
 
 
 

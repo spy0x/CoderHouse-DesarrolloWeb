@@ -46,33 +46,37 @@
     </nav>
 
     <!-- Formulario de contacto -->
-    <section class="container-fluid px-1 py-3">
+    <section class="container-fluid px-4 py-3">
         <div class="text-center">
             <i class="me-3 fa-solid fa-at fa-2x"></i>
             <h1 class="d-inline-block article__title">Contact</h1>
             <i class="ms-3 fa-solid fa-at fa-2x"></i>
         </div>
-        <article class="article__container rounded-3">
-            <img src="./img/Los3BIG.png" alt="us version pixelart" class="mx-auto d-block form__img">
-            <div class="d-flex justify-content-center">
-                <form action="POST" id="formulario" class="d-flex flex-column">
-                    <div class="d-flex flex-column align-content-start">
-                        <label for="name">Name</label>
-                        <input class="form-control text-dark" type="text" placeholder="Your name" name="name">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <label for="email">Email</label>
-                        <input class="form-control text-dark" type="email" placeholder="your@email.com" name="email">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <label for="message">Message</label>
-                        <textarea id="form__textArea" class="form-control text-dark" placeholder="Your message here."
-                            name="message"></textarea>
-                    </div>
-                </form>
+        <article class="container-md article__container rounded-3 p-3">
+            <div class="d-flex justify-content-around align-items-center">
+                <img src="./img/Bed.png" alt="draw of us thinking game ideas" class="form__img">
+                <div class="d-flex justify-content-center">
+                    <form action="POST" id="formulario" class="d-flex flex-column">
+                        <img src="./img/Los3BIG.png" alt="us version pixelart" class="mx-auto d-block form__img">
+                        <div class="d-flex flex-column align-content-start">
+                            <label for="name">Name</label>
+                            <input class="form-control text-dark" type="text" placeholder="Your name" name="name">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label for="email">Email</label>
+                            <input class="form-control text-dark" type="email" placeholder="your@email.com" name="email">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label for="message">Message</label>
+                            <textarea id="form__textArea" class="form-control text-dark" placeholder="Your message here."
+                                name="message"></textarea>
+                        </div>
+                        <button type="submit" form="formulario" value="Submit"
+                            class="btn form__button d-block mx-auto mt-3">Send</button>
+                    </form>
+                </div>
+                <img src="./img/draw_our_faces.png" alt="draw of our faces" class="form__img">
             </div>
-            <button type="submit" form="formulario" value="Submit"
-                class="form__button btn d-block mx-auto">SEND</button>
         </article>
     </section>
 

@@ -1,3 +1,48 @@
+.article__container {
+  border: 1px solid black;
+  background-color: #212529;
+  -webkit-box-shadow: 5px 8px 14px 2px rgba(0, 0, 0, 0.72);
+  box-shadow: 5px 8px 14px 2px rgba(0, 0, 0, 0.72);
+}
+
+.card--shadow {
+  -webkit-box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78);
+  box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78);
+}
+.card--overlay {
+  transition: all 1s;
+  text-align: center;
+}
+.card--overlay:hover {
+  opacity: 0;
+}
+.card--overlay:focus {
+  opacity: 0;
+}
+
+.card__img--circle {
+  border-radius: 50%;
+  width: 75%;
+  margin: 1rem 0;
+  align-self: center;
+}
+
+.button, .form__button {
+  background-color: rgb(163, 0, 0);
+  border-color: rgb(46, 0, 0);
+  color: #F0F1F2;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+}
+.button:hover, .form__button:hover {
+  background-color: rgb(94, 0, 0);
+  border-color: rgb(197, 2, 2);
+}
+.button:focus, .form__button:focus {
+  background-color: rgb(94, 0, 0);
+  border-color: rgb(197, 2, 2);
+}
+
 /* RESET CSS */
 * {
   margin: 0;
@@ -194,10 +239,7 @@ section {
 }
 
 .form__button {
-  color: black;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: whitesmoke;
+  font-size: 1rem;
 }
 
 .form__img {
@@ -209,55 +251,6 @@ section {
 
 #form__textArea {
   height: 125px;
-}
-
-form div {
-  margin: 1rem 0;
-}
-
-.article__container {
-  border: 1px solid black;
-  background-color: #212529;
-  -webkit-box-shadow: 5px 8px 14px 2px rgba(0, 0, 0, 0.72);
-  box-shadow: 5px 8px 14px 2px rgba(0, 0, 0, 0.72);
-}
-
-.card--shadow {
-  -webkit-box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78);
-  box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78);
-}
-.card--overlay {
-  transition: all 1s;
-  text-align: center;
-}
-.card--overlay:hover {
-  opacity: 0;
-}
-.card--overlay:focus {
-  opacity: 0;
-}
-
-.card__img--circle {
-  border-radius: 50%;
-  width: 75%;
-  margin: 1rem 0;
-  align-self: center;
-}
-
-.button {
-  background-color: rgb(163, 0, 0);
-  border-color: rgb(46, 0, 0);
-  color: #F0F1F2;
-  font-family: "Playfair Display SC", serif;
-  font-size: 1.5rem;
-}
-.button:hover {
-  background-color: rgb(94, 0, 0);
-  border-color: rgb(197, 2, 2);
-}
-.button:focus {
-  background-color: rgb(94, 0, 0);
-  border-color: rgb(197, 2, 2);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,6 @@
 .form__button {
-    color: black;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: whitesmoke;
+    @extend .button;
+    font-size: 1rem;
 }
 
 .form__img {
@@ -12,8 +10,4 @@
 
 #form__textArea {
     height: 125px;
-}
-
-form div {
-    margin: 1rem 0;
 }
