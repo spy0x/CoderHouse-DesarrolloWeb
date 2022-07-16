@@ -14,6 +14,10 @@ font-family: 'Hubballi', cursive;
 font-family: 'Homenaje', sans-serif;
 font-family: 'Black Ops One', cursive;
 */
+p {
+  line-height: 1.4rem;
+}
+
 .article__title, .article__subtitle {
   font-size: 3rem;
   font-family: "Black Ops One", cursive;
@@ -26,7 +30,7 @@ font-family: 'Black Ops One', cursive;
 
 @media screen and (min-width: 768px) {
   .article__subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .article__card--team ul {
     font-size: 1.5rem;
@@ -35,7 +39,7 @@ font-family: 'Black Ops One', cursive;
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   p {
     font-size: 1.5rem;
   }
@@ -158,7 +162,6 @@ section {
   }
 }
 .article__card--projects {
-  padding: 1rem;
   border: 1px solid black;
   background-color: #212529;
   border-radius: 0.5rem;
@@ -221,11 +224,6 @@ form div {
   width: 75%;
   margin: 1rem 0;
   align-self: center;
-}
-.card__img--square {
-  width: 100%;
-  margin: 1rem 0;
-  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
