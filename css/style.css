@@ -186,7 +186,11 @@ section {
 .article__card--team {
   background-color: #17191A;
   height: 100%;
-  width: 20rem;
+  max-width: 20rem;
+  margin: auto;
+}
+.article__card__img--team {
+  background-color: #101112;
 }
 
 .form__button {

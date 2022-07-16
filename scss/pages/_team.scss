@@ -1,5 +1,11 @@
-.article__card--team {
-    background-color: $background-dark;
-    height: 100%;
-    width: 20rem;
+.article__card {
+    &--team{
+        background-color: $background-dark;
+        height: 100%;
+        max-width: 20rem;
+        margin: auto;
+    }
+    &__img--team{
+        background-color: $card-bgimage-color;
+    }
 }
