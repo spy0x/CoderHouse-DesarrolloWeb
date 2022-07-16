@@ -10,10 +10,19 @@ $box-shadow-color: rgba(0, 0, 0, 0.72);
 $text-body-color: #F0F1F2;
 $text-shadow-color: black;
 
+// BUTTONS
+$btn-bgcolor: rgb(163, 0, 0); 
+$btn-bgcolor-hover: rgb(94, 0, 0);
+$btn-bgborder-color: rgb(46, 0, 0);
+$btn-bgborder-color-hover: rgb(197, 2, 2);
+$btn-bgcolor-focus: rgb(94, 0, 0);
+$btn-bgborder-color-focus: rgb(197, 2, 2);
+
 // FONTS
 $fonts: (
     title: ('Black Ops One', cursive),
     body: ('Hubballi', cursive),
+    button: ('Playfair Display SC', serif),
     footer: ('Anton', sans-serif),
     navbar: ('Homenaje', sans-serif),
 );

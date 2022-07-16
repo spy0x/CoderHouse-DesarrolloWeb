@@ -8,19 +8,12 @@
 
 .article__container {
     &__projects--grid {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas:
-        "column" "column";
-        column-gap: 2rem;
-        row-gap: 2rem;
-        align-items: center;
+        @extend .article__container__index--grid;
         justify-items: center;
     }
 
     &__img--projects {
-        background-color: $background-dark;
+        @extend .article__container__img--index;
         max-width: 200px;
-        box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78)
     }
 }

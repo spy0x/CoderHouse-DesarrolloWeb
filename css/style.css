@@ -131,15 +131,16 @@ section {
   min-height: 52vh;
 }
 
-.article__container__index--grid {
+.article__container__index--grid, .article__container__projects--grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: 2rem;
   row-gap: 2rem;
   align-items: center;
 }
-.article__container__img--index {
+.article__container__img--index, .article__container__img--projects {
   background-color: #17191A;
+  width: 100%;
   max-width: 125px;
   box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78);
 }
@@ -176,18 +177,10 @@ section {
 }
 
 .article__container__projects--grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: "column" "column";
-  column-gap: 2rem;
-  row-gap: 2rem;
-  align-items: center;
   justify-items: center;
 }
 .article__container__img--projects {
-  background-color: #17191A;
   max-width: 200px;
-  box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.78);
 }
 
 .article__card--team {
@@ -245,6 +238,22 @@ form div {
   width: 75%;
   margin: 1rem 0;
   align-self: center;
+}
+
+.button {
+  background-color: rgb(163, 0, 0);
+  border-color: rgb(46, 0, 0);
+  color: #F0F1F2;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+}
+.button:hover {
+  background-color: rgb(94, 0, 0);
+  border-color: rgb(197, 2, 2);
+}
+.button:focus {
+  background-color: rgb(94, 0, 0);
+  border-color: rgb(197, 2, 2);
 }
 
 /*# sourceMappingURL=style.css.map */
