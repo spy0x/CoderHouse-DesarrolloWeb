@@ -125,12 +125,16 @@ nav ul {
     opacity: 1;
   }
 }
-header {
+.header, .header__bar {
   background-image: url("../img/PixelArt/objetos/FondoBIG.png");
   background-size: contain;
   /* background-color: $background-dark; */
   background-repeat: repeat-x;
   height: 30vh;
+}
+
+.header__bar {
+  height: 100%;
 }
 
 header img {
