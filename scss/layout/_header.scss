@@ -7,7 +7,8 @@
 }
 .header__bar {
     @extend .header;
-    height: 100%;
+    height: 10vh;
+    padding: 2vh;
 }
 
 header img {

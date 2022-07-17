@@ -7,13 +7,9 @@
 }
 
 .article__container {
-    &__projects--grid {
-        @extend .article__container__index--grid;
-        justify-items: center;
-    }
-
     &__img--projects {
         @extend .article__container__img--index;
-        max-width: 200px;
+        max-width: 250px;
+        justify-self: center;
     }
 }
