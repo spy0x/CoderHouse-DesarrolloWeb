@@ -64,7 +64,7 @@ p {
 }
 
 .article__title, .article__subtitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Black Ops One", cursive;
   text-shadow: 5px 6px 6px black;
 }
@@ -74,10 +74,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .article__subtitle {
-    font-size: 1.5rem;
+  .article__title, .article__subtitle {
+    font-size: 3rem;
   }
-  .article__card--team ul {
+  .article__subtitle {
     font-size: 1.5rem;
   }
   .footer__text {

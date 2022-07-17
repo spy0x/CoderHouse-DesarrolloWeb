@@ -30,9 +30,9 @@ $fonts: (
     navbar: ('Homenaje', sans-serif),
 );
 
-// FONT SIZES
+// FONT SIZES FOR BIG SCREEN
 $texts: (
+    article__title: 3rem,
     article__subtitle: 1.5rem,
-    article__card--team ul: 1.5rem,
     footer__text: 1.2rem
 );
