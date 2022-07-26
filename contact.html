@@ -68,20 +68,22 @@
                 <img src="./img/Bed.png" alt="draw of us thinking game ideas" class="col-4 d-none d-md-block">
                 <div class="d-flex justify-content-center">
                     <form action="POST" id="formulario" class="d-flex flex-column">
-                        <img data-aos="flip-right" data-aos-duration="500" data-aos-once="true" src="./img/Los3BIG.png" alt="us version pixelart" class="mx-auto d-block form__img">
-                        <div class="d-flex flex-column align-content-start">
+                        <img data-aos="flip-right" data-aos-duration="500" data-aos-once="true" src="./img/Los3BIG.png"
+                            alt="us version pixelart" class="mx-auto d-block form__img">
+                        <div class="d-flex flex-column mt-3">
                             <label for="name">Name</label>
-                            <input class="form-control text-dark" type="text" placeholder="Your name" name="name">
+                            <input class="form-control text-dark" type="text" placeholder="Your name" name="name"
+                                required>
                         </div>
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column mt-3">
                             <label for="email">Email</label>
-                            <input class="form-control text-dark" type="email" placeholder="your@email.com"
-                                name="email">
+                            <input class="form-control text-dark" type="email" placeholder="your@email.com" name="email"
+                                required>
                         </div>
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column mt-3">
                             <label for="message">Message</label>
                             <textarea id="form__textArea" class="form-control text-dark"
-                                placeholder="Your message here." name="message"></textarea>
+                                placeholder="Your message here." name="message" required></textarea>
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true">
                             <button type="submit" form="formulario" value="Submit"
@@ -93,7 +95,7 @@
             </div>
         </article>
     </section>
-
+    
     <!-- Seccion pie de página -->
     <footer class="container-fluid sticky-bottom footer__container">
         <img src="./img/Logo_LTP.svg" alt="logo los tres primos" class="h-100">
