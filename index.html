@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/bb590912ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
@@ -63,29 +64,29 @@
         <!-- Seccion bienvenida con descripciones breves de la organización -->
         <article class="article__container rounded-3 py-5 px-3">
             <div class="article__grid">
-                <div
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true"
                     class="article__container__img--index w-100 m-auto rounded-4 border border-light border-opacity-50 p-3">
                     <img src="./img/Logo_LTP.svg" alt="icono los tres primos">
                 </div>
-                <div>
+                <div data-aos="fade" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true">
                     <h3 class="article__subtitle">LTP</h3>
                     <p class="m-0">Los Tres Primos is an indie chilean Game Development Studio made by three cousins.
                     </p>
                 </div>
-                <div
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true"
                     class="article__container__img--index w-100 m-auto rounded-4 border border-light border-opacity-50 p-3">
                     <img src="./img/console-controller.svg" alt="icon los tres primos">
                 </div>
-                <div>
+                <div data-aos="fade" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                     <h3 class="article__subtitle">Engine</h3>
                     <p class="m-0">We are constantly developing 2D & 3D Games with Unity Game Engine Software.
                     </p>
                 </div>
-                <div
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true"
                     class="article__container__img--index w-100 m-auto rounded-4 border border-light border-opacity-50 p-3">
                     <img src="./img/cube.svg" alt="icon los tres primos">
                 </div>
-                <div>
+                <div data-aos="fade" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
                     <h3 class="article__subtitle">Design</h3>
                     <p class="m-0">Using Blender and Aseprite for 3D and 2D Game Asset Creation.</p>
                 </div>
@@ -118,6 +119,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

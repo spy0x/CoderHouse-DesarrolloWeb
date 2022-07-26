@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/bb590912ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
@@ -25,7 +26,8 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://spy0x.github.io/CoderHouse-DesarrolloWeb/team.html" />
     <meta property="og:image" content="https://spy0x.github.io/CoderHouse-DesarrolloWeb/img/LTP_LOGO_PIX_BIG.png" />
-    <meta property="og:description" content="More about our team members working at LTP Indie Game Development Studio." />
+    <meta property="og:description"
+        content="More about our team members working at LTP Indie Game Development Studio." />
 </head>
 
 <body>
@@ -64,7 +66,7 @@
     <section class="container-fluid pt-3 px-4">
         <article class="article__container rounded-3 px-3">
             <div class="row justify-content-around mt-4">
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true" data-aos-delay="0" class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="card article__card--team card--shadow">
                         <div class="article__card__img--team text-center">
                             <img src="./img/lach.png" class="card__img--circle" alt="Snow Profile Photo">
@@ -78,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true" data-aos-delay="200" class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="card article__card--team card--shadow">
                         <div class="article__card__img--team text-center">
                             <img src="./img/tom.png" class="card__img--circle" alt="Alexanderk Profile Photo.">
@@ -92,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true" data-aos-delay="400" class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="card article__card--team card--shadow">
                         <div class="article__card__img--team text-center">
                             <img src="./img/pancho.png" class="card__img--circle" alt="Pancho Profile Photo">
@@ -125,6 +127,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
